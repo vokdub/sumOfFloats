@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="">
+		<label for="FirstNumber">Первое число:</label>
+		<input id="FirstNumber" type="text">
+
+		<label for="SecondNumber">Второе число:</label>
+		<input id="SecondNumber" type="text">
+		<button onclick="sum()">Сложить</button>
+	</form>
+	<script>
+		function sum(){
+			alert(+(parseFloat(document.getElementById("FirstNumber").value)+parseFloat(document.getElementById("SecondNumber").value)).toFixed(10));
+		}
+	</script>
+</body>
+</html>
